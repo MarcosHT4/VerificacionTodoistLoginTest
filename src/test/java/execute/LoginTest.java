@@ -11,7 +11,7 @@ public class LoginTest extends TestBase {
         loginPage.emailTextbox.setText("marcos@vpsitest.com");
         loginPage.passwordTextbox.setText("pole12345");
         loginPage.loginButton.click();
-        Assertions.assertTrue(dashboardPage.upgradeProButtonLabel.isControlDisplayed());
+        Assertions.assertTrue(dashboardPage.upgradeProButtonLabel.isControlDisplayed(), "ERROR! El Login no pudo ser realizado");
     }
 
 
